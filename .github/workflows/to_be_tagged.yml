@@ -33,8 +33,7 @@ jobs:
         with:
           repository: cbryantompkins/get_tag_update
           path: get_tag_update
-        run: ./update.sh -v patch
 
-      # Runs a single command using the runners shell
-      # - name: Update tag
-      #   run: 
+      #Runs a single command using the runners shell
+      - name: Update tag
+        run: ./get_tag_update/update.sh -v patch 
