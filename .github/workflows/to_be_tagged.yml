@@ -36,4 +36,4 @@ jobs:
 
       #Runs a single command using the runners shell
       - name: Update tag
-        run: cbryantompkins/get_tag_update/update.sh -v patch 
+        run: ./get_tag_update/update.sh -v patch 
