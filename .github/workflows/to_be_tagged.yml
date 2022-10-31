@@ -27,13 +27,4 @@ jobs:
         with:
           fetch-depth: 0
           # path: main
-
-      - name: Checkout tag repo
-        uses: actions/checkout@v3
-        with:
-          repository: cbryantompkins/get_tag_update
-          path: get_tag_update
-
-      #Runs a single command using the runners shell
-      - name: Update tag
-        run: ./get_tag_update/update.sh -v patch 
+      - uses: $GITHUB_ACTION_PATH/update.sh

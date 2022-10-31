@@ -1,0 +1,7 @@
+name: 'Update Tag'
+description: 'update version tag'
+runs:
+  using: composite
+  steps:
+    - run: update.sh
+      shell: bash
