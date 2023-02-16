@@ -19,9 +19,6 @@ jobs:
           command: | 
             echo "Hello, World!"
             echo "Curt is Awsome!"
-      - run:
-          name: "Use env var"
-          command: |
             echo ${NAME}
 
 # Invoke jobs via workflows
